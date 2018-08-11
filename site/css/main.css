@@ -1,0 +1,26 @@
+.fa-default{
+    color: #339af0;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+p{
+    color: #777777;
+}
+
+li{
+    color: #555555;
+}
+
+h3{
+    color: #555555;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 20px;
+}
+
+h2{
+    color: #555555;
+    font-size: 26px;
+    left:-20px;
+}
