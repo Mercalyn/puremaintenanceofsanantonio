@@ -4,12 +4,24 @@
     margin: 0 auto;
 }
 
+.blue-bg{
+    background-color: #339af0;
+}
+
+.white-text{
+    color:white;
+}
+
 p{
     color: #777777;
 }
 
 li{
     color: #555555;
+}
+
+.centered-button{
+    margin: 0 auto;
 }
 
 h3{
@@ -23,4 +35,14 @@ h2{
     color: #555555;
     font-size: 26px;
     left:-20px;
+}
+
+#googleMap{
+    background-color:black;
+    height: 300px;
+    width: 300px;
+}
+
+textarea.form-control{
+    height:200px;
 }
