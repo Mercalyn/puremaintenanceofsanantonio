@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.gif" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><!/script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/js.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
 </head>
     
     
@@ -25,29 +26,29 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li id="homeLabel" class="nav-item active">
+                <a class="nav-link" href="#" id="homeButton">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+              <li id="servicesLabel" class="nav-item">
+                <a class="nav-link" href="#" id="servicesButton">Services</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Company</a>
+              <li id="companyLabel" class="nav-item">
+                <a class="nav-link" href="#" id="companyButton">Company</a>
               </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <li id="contactLabel" class="nav-item">
+                <a class="nav-link contactButton" href="#">Contact Us</a>
               </li>
               
             </ul>
             <form class="form-inline my-0 my-lg-0">
-              <button class="btn btn-outline-info my-0 my-sm-0" type="submit">Request a Free Quote!</button>
+              <button type="button" class="btn btn-outline-info my-0 my-sm-0 contactButton">Request a Free Quote!</button>
             </form>
           </div>
         </nav>
     </div>
     
     
-    <section id="contentload">
+    <section class="contentLoad" id="mainContent">
         
         <div class="container">
             <div id="myCarousel" class="carousel slide m-3" data-ride="carousel">
@@ -80,14 +81,16 @@
             </div>
         </div>
         
+    </section>
+        
         <div class="container">
             <div class="d-flex justify-content-center">
-                <div class="d-flex flex-column flex-sm-row justify-content-around w-50 m-2 m-md-0">
+                <div class="d-flex flex-column flex-sm-row justify-content-around w-50 mt-4 mt-md-3">
                     <img src="img/b1.png" alt="Home Advisor Best of 2018 Winner" style="align-self: center;">
                     <img src="img/b2.png" alt="Home Advisor Elite Service" style="align-self: center;">
                     <img src="img/b3.png" alt="Home Advisor Top Rated" style="align-self: center;">
                 </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-around w-50 m-2 m-md-0">
+                <div class="d-flex flex-column flex-sm-row justify-content-around w-50 mt-4 mt-md-3">
                     <img src="img/b4.png" alt="Home Advisor 20 Reviews" style="align-self: center;">
                     <img src="img/b5.jpg" alt="Home Advisor 5 Years Screened and Approved" style="align-self: center;">
                     <img src="img/b6.jpg" alt="Thumbtack Professional Award 2017" style="align-self: center;">
@@ -96,8 +99,10 @@
             
         </div>
         
+    <section class="contentLoad">
+        
         <div class="container">
-            <img src="img/tfg1.png" class="w-100 mt-3" alt="Pure Mold Solutions Trifold 1">
+            <img src="img/tfg1.png" class="w-100 mt-5" alt="Pure Mold Solutions Trifold 1">
         </div>
         
         <div class="container">
@@ -128,6 +133,8 @@
                     <i class="fas fa-file-code fa-default"></i>
                     <h3>Proven Technology</h3>
                     <p>Our patented process has been tested and recommended by the US Army Corps of Engineers as a safe and effective way to eliminate indoor mold.</p>
+                    <button class="btn btn-outline-info mt-3 centered-button" id="engineersButton">The Army Corps of Engineers?</button>
+                    
                 </div>
                 <div class="d-flex flex-column w-25 align-items-start">
                     <i class="fas fa-shield-alt fa-default"></i>
@@ -136,35 +143,86 @@
                 </div>
                 
             </div>
+            <article id="engineersArticle" class="container w-75 mt-3">
+                <p style="color:#444444">
+                    EXCERPT: The Army Corp of Engineers found that the Dry Fog technique used by Pure Maintenance had "..proved to be capable of rapidly annihilating the mold spores. The dry-fog technology’s second step (EVERpure™) continued to reduce mold spore levels over time." 
+                </p>
+                <p class="text-success">
+                    Read the full Report by clicking: 
+                </p>
+                <a href="pdf/dryfogremoval.pdf" target="_blank">
+                    The U.S. Army Corp of Engineers Dry Fog Study
+                </a>
+                </article>
         </div>
         
         <div class="container">
-            <img src="img/tfg2.png" class="w-100 mt-4" alt="Pure Mold Solutions Trifold 2">
+            <img src="img/tfg2.png" class="w-100 mt-5" alt="Pure Mold Solutions Trifold 2">
         </div>
         
         
     </section>
     
     <div class="container">
-        <div class="d-flex flex-row justify-content-around mt-5">
-                <div class="d-flex flex-column w-25 align-items-start">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><h2>Headquarters</h2></li>
-                        <li class="list-group-item">(map)</li>
-                    </ul>
-                </div>
+        <div class="d-flex flex-row justify-content-around mt-4">
                 <div class="d-flex flex-column w-50 align-items-start">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item pl-5"><h2>Pure Mold Solution of San Antonio</h2>Remember the Alamo -- Not the Mold!</li>
-                        <li class="list-group-item pl-5">(address)<br>(address)</li>
-                        <li class="list-group-item pl-5">p. 210-904-7909 (office)<br>e. joerockstheworld@yahoo.com</li>
-                        <li class="list-group-item pl-5">(hours)<br>(hours2)</li>
+                    <ul class="list-group">
+                        <li class="list-group-item blue-bg">
+                            <h2 class="white-text">Pure Mold Solution of San Antonio</h2>
+                        </li>
+                        <li class="list-group-item">
+                            Remember the Alamo -- Not the Mold!
+                        </li>
+                        <li class="list-group-item d-flex flex-row">
+                            <i class="fas fa-envelope-square fa-lg mr-3"></i><img src="img/emailpic.png" alt="">
+                                
+                        </li>
+                        <li class="list-group-item d-flex flex-row">
+                                <i class="fas fa-phone-square fa-lg mr-3"></i><img src="img/phonepic.png" alt="">
+                                
+                        </li>
                     </ul>
                 </div>
-                <div class="d-flex flex-column w-25 align-items-start">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><h2>Contact Us</h2></li>
-                        <li class="list-group-item">(contact form)</li>
+            
+            
+                <div class="d-flex w-50 flex-column align-items-start">
+                    <ul class="list-group list-group-flush w-100">
+                        <li class="list-group-item"><h2>Contact Your Local Mold Experts</h2></li>
+                        <li class="list-group-item">
+                            <form name="contactForm">
+                                
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="name" id="contact-name" aria-label="name" aria-describedby="basic-addon1">
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope-square"></i></span>
+                                    </div>
+                                    <input type="email" class="form-control" placeholder="email" id="contact-email" aria-label="email" aria-describedby="basic-addon1">
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-square"></i></span>
+                                    </div>
+                                    <input type="tel" class="form-control" placeholder="phone" id="contact-phone" aria-label="phone" aria-describedby="basic-addon1">
+                                </div>
+                                
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-align-left"></i></span>
+                                    </div>
+                                    <textarea class="form-control textarea d-block" placeholder="message" id="contact-msg" aria-label="textarea"></textarea>
+                                </div>
+                                <div class="input-group mb-3 w-100 justify-content-center">
+                                    <button type="button" id="contact-submit" class="btn btn-outline-info mb-3 w-50">Submit</button>
+                                </div>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </div>
