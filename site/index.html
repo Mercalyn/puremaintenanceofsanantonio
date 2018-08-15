@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.gif" />
-    <!script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"><!/script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -40,15 +39,15 @@
               </li>
               
             </ul>
-            <form class="form-inline my-0 my-lg-0">
-              <button type="button" class="btn btn-outline-info my-0 my-sm-0 contactButton">Request a Free Quote!</button>
+            <form class="form-inline mt-2 my-0 my-lg-0">
+              <button type="button" class="btn btn-outline-info my-0 my-sm-0 contactButton nav-item">Request a Free Quote!</button>
             </form>
           </div>
         </nav>
     </div>
     
     
-    <section class="contentLoad" id="mainContent">
+    <section id="mainContent">
         
         <div class="container">
             <div id="myCarousel" class="carousel slide m-3" data-ride="carousel">
@@ -60,19 +59,20 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                     <video id="vidOne" class="d-block w-100" muted autoplay>
-                    <source src="vid/local.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    <source src="vid/local_nosound.mp4" type="video/mp4">
+                    <img src="img/still.png" alt="Pure Mold Solution of San Antonio">
                     </video>
+                    
                 </div>
                 <div class="carousel-item">
                     <video id="vidTwo" class="d-block w-100" muted autoplay>
-                    <source src="vid/text.mp4" type="video/mp4">
+                    <source src="vid/text_nosound.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="carousel-item">
                     <video id="vidTre" class="d-block w-100" muted autoplay>
-                    <source src="vid/hazards.mp4" type="video/mp4">
+                    <source src="vid/hazards_nosound.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>
                 </div>
@@ -83,90 +83,86 @@
         
     </section>
         
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <div class="d-flex flex-column flex-sm-row justify-content-around w-50 mt-4 mt-md-3">
-                    <img src="img/b1.png" alt="Home Advisor Best of 2018 Winner" style="align-self: center;">
-                    <img src="img/b2.png" alt="Home Advisor Elite Service" style="align-self: center;">
-                    <img src="img/b3.png" alt="Home Advisor Top Rated" style="align-self: center;">
-                </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-around w-50 mt-4 mt-md-3">
-                    <img src="img/b4.png" alt="Home Advisor 20 Reviews" style="align-self: center;">
-                    <img src="img/b5.jpg" alt="Home Advisor 5 Years Screened and Approved" style="align-self: center;">
-                    <img src="img/b6.jpg" alt="Thumbtack Professional Award 2017" style="align-self: center;">
-                </div>
+        <div id="awards" class="container">
+            <div class="d-flex flex-row w-100 justify-content-around mt-3">
+                <img src="img/b1.png" alt="Home Advisor Best of 2018 Winner" style="align-self: center;">
+                <img src="img/b2.png" alt="Home Advisor Elite Service" style="align-self: center;">
+                <img src="img/b3.png" alt="Home Advisor Top Rated" style="align-self: center;">
+                <img src="img/b4.png" alt="Home Advisor 20 Reviews" style="align-self: center;">
+                <img src="img/b5.jpg" alt="Home Advisor 5 Years Screened and Approved" style="align-self: center;">
+                <img src="img/b6.jpg" alt="Thumbtack Professional Award 2017" style="align-self: center;">
             </div>
             
         </div>
         
-    <section class="contentLoad">
+    <section id="secondaryContent">
         
         <div class="container">
-            <img src="img/tfg1.png" class="w-100 mt-5" alt="Pure Mold Solutions Trifold 1">
+            <img src="img/tfg1_new.png" class="w-100 mt-5" alt="Pure Mold Solutions Trifold 1">
         </div>
         
         <div class="container">
-            <div class="d-flex flex-row justify-content-around mt-5">
-                <div class="d-flex flex-column w-25 align-items-start">
+            <div class="d-flex flex-column flex-md-row justify-content-around mt-5">
+                <div class="d-flex flex-column align-items-start mx-2">
                     <i class="fas fa-drafting-compass fa-default"></i>
                     <h3>Demolition Free</h3>
                     <p>Don't remove and replace walls.  Call us today for a free estimate and our technician can explain to you how we can eliminate the problem demolition free.</p>
                 </div>
-                <div class="d-flex flex-column w-25 align-items-start">
+                <div class="d-flex flex-column align-items-start mx-2">
                     <i class="fas fa-leaf fa-default"></i>
                     <h3>Environmentally Safe</h3>
                     <p>Once your treatment is finished, you may occupy your house or office again within a few hours.  Our EPA registered solution is non-toxic and will not harm humans or their pets.</p>
                 </div>
-                <div class="d-flex flex-column w-25 align-items-start">
+                <div class="d-flex flex-column align-items-start mx-2">
                     <i class="fas fa-clock fa-default"></i>
                     <h3>Same Day Service</h3>
                     <p>In most cases, your house or office will be cleared of mold in one day. Our technology works as hard as our team</p>
                 </div>
             </div>
-            <div class="d-flex flex-row justify-content-around mt-3">
-                <div class="d-flex flex-column w-25 align-items-start">
+            <div class="d-flex flex-column flex-md-row justify-content-around mt-3">
+                <div class="d-flex flex-column align-items-start mx-2">
                     <i class="fas fa-universal-access fa-default"></i>
                     <h3>Professional Team</h3>
                     <p>Each team member is background tested and approved. Our employees are our brand!</p>
                 </div>
-                <div class="d-flex flex-column w-25 align-items-start">
+                <div class="d-flex flex-column align-items-start mx-2">
                     <i class="fas fa-file-code fa-default"></i>
                     <h3>Proven Technology</h3>
                     <p>Our patented process has been tested and recommended by the US Army Corps of Engineers as a safe and effective way to eliminate indoor mold.</p>
-                    <button class="btn btn-outline-info mt-3 centered-button" id="engineersButton">The Army Corps of Engineers?</button>
-                    
+                    <button class="btn btn-outline-info mt-2 mb-4 centered-button" id="engineersButton">The Army Corps of Engineers?</button>
+                    <article id="engineersArticle" class="container w-100 mt-1 mb-4">
+                        <p style="color:#444444">
+                            EXCERPT: The Army Corp of Engineers found that the Dry Fog technique used by Pure Maintenance had "..proved to be capable of rapidly annihilating the mold spores. The dry-fog technology’s second step (EVERpure™) continued to reduce mold spore levels over time." 
+                        </p>
+                        <p class="text-success">
+                            Read the full Report by clicking: 
+                        </p>
+                        <a href="pdf/dryfogremoval.pdf" target="_blank">
+                            The U.S. Army Corp of Engineers Dry Fog Study
+                        </a>
+                    </article>
                 </div>
-                <div class="d-flex flex-column w-25 align-items-start">
+                <div class="d-flex flex-column align-items-start mx-2">
                     <i class="fas fa-shield-alt fa-default"></i>
                     <h3>Award Winning</h3>
                     <p>Our patented technology has won several awards, including Home Advisor Best of 2018 for our category.</p>
                 </div>
                 
             </div>
-            <article id="engineersArticle" class="container w-75 mt-3">
-                <p style="color:#444444">
-                    EXCERPT: The Army Corp of Engineers found that the Dry Fog technique used by Pure Maintenance had "..proved to be capable of rapidly annihilating the mold spores. The dry-fog technology’s second step (EVERpure™) continued to reduce mold spore levels over time." 
-                </p>
-                <p class="text-success">
-                    Read the full Report by clicking: 
-                </p>
-                <a href="pdf/dryfogremoval.pdf" target="_blank">
-                    The U.S. Army Corp of Engineers Dry Fog Study
-                </a>
-                </article>
+            
         </div>
         
         <div class="container">
-            <img src="img/tfg2.png" class="w-100 mt-5" alt="Pure Mold Solutions Trifold 2">
+            <img src="img/tfg2_new.png" class="w-100 mt-5" alt="Pure Mold Solutions Trifold 2">
         </div>
         
         
     </section>
     
-    <div class="container">
-        <div class="d-flex flex-row justify-content-around mt-4">
-                <div class="d-flex flex-column w-50 align-items-start">
-                    <ul class="list-group">
+    <div class="container justify-content-center">
+        <div class="d-flex flex-column flex-md-row justify-content-around mt-4">
+                <div class="d-flex flex-column align-items-start w-100 w-md-50">
+                    <ul class="list-group w-100">
                         <li class="list-group-item blue-bg">
                             <h2 class="white-text">Pure Mold Solution of San Antonio</h2>
                         </li>
@@ -185,7 +181,7 @@
                 </div>
             
             
-                <div class="d-flex w-50 flex-column align-items-start">
+                <div class="d-flex flex-column align-items-start w-100 w-md-50">
                     <ul class="list-group list-group-flush w-100">
                         <li class="list-group-item"><h2>Contact Your Local Mold Experts</h2></li>
                         <li class="list-group-item">
@@ -193,31 +189,35 @@
                                 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                                        <span id="span-name" class="input-group-text"><i class="fas fa-user"></i></span>
                                     </div>
                                     <input type="text" class="form-control" placeholder="name" id="contact-name" aria-label="name" aria-describedby="basic-addon1">
                                 </div>
                                 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope-square"></i></span>
+                                        <span id="span-email" class="input-group-text"><i class="fas fa-envelope-square"></i></span>
                                     </div>
                                     <input type="email" class="form-control" placeholder="email" id="contact-email" aria-label="email" aria-describedby="basic-addon1">
                                 </div>
                                 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone-square"></i></span>
+                                        <span id="span-phone" class="input-group-text"><i class="fas fa-phone-square"></i></span>
                                     </div>
                                     <input type="tel" class="form-control" placeholder="phone" id="contact-phone" aria-label="phone" aria-describedby="basic-addon1">
                                 </div>
                                 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-align-left"></i></span>
+                                        <span id="span-msg" class="input-group-text"><i class="fas fa-align-left"></i></span>
                                     </div>
                                     <textarea class="form-control textarea d-block" placeholder="message" id="contact-msg" aria-label="textarea"></textarea>
                                 </div>
+                                <article>
+                                    <p id="submission-status">
+                                    </p>
+                                </article>
                                 <div class="input-group mb-3 w-100 justify-content-center">
                                     <button type="button" id="contact-submit" class="btn btn-outline-info mb-3 w-50">Submit</button>
                                 </div>

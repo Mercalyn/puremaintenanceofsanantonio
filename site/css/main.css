@@ -1,11 +1,36 @@
+@media only screen and (min-width: 576px){
+    #awards{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    #awards{
+        display: none;
+    }
+}
+
 .fa-default{
     color: #339af0;
     font-size: 50px;
     margin: 0 auto;
 }
 
+
 .blue-bg{
     background-color: #339af0;
+}
+
+.input-success{
+    color: #28a745;
+    background-color: #B6E5BA;
+    border: 1px solid #28a745;
+}
+
+.input-failure{
+    color: #dc3545;
+    background-color: #E5B6B6;
+    border: 1px solid #dc3545;
 }
 
 .white-text{

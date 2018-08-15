@@ -10,9 +10,9 @@ $email = $data->{email};
 $message = $data->{msg};
 
 $from = "From: joe@puremoldsolution.com";
-$to = 'mercalus@gmail.com'; 
+$to = 'joerockstheworld@yahoo.com'; 
 $subject = "Customer Contact From $name!";
-$body = " From: $name\n Email: $email\n Phone: $phone\n Message:\n $message\n DO NOT REPLY TO THIS EMAIL -- IT WON'T BE READ BY THE CUSTOMER";
+$body = " From: $name\n Email: $email\n Phone: $phone\n\n Message:\n $message\n\n DO NOT REPLY TO THIS EMAIL -- MAIL IS DELIVERED TO THE WEBSITE, NOT THE CUSTOMER";
 
 #echo $body;
 
