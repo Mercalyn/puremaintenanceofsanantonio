@@ -1,0 +1,80 @@
+.col{
+    padding: 0px;
+}
+
+.row{
+    margin: 0px;
+}
+
+.awards-row{
+    margin: 20px 0px;
+}
+
+.awards-column{
+    margin: auto;
+    flex-grow: 0;
+}
+
+.carousel-indicators{
+    display:none;
+}
+
+h4{
+    color:#00bfff;
+    font-size: 20px;
+}
+
+h5{
+    color:#00bfff;
+    font-size: 16px;
+}
+
+p{
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+p.darkblue{
+    color: #ccebff;
+}
+
+h5.darkblue{
+    color: #e6f5ff;
+    padding: 5px 20px;
+}
+
+.trifold{
+    min-width: 310px;
+}
+
+.w100-image{
+    width: 100%;
+}
+
+@media only screen and (max-width : 991px){
+    #trifold-hide{
+        display: none;
+    }
+}
+
+.bg-darkblue{
+    background-color:#2881C5;
+}
+
+.bg-grey{
+    background-color:grey;
+}
+
+.align-middle{
+    margin:auto;
+}
+
+.align-bottom{
+    vertical-align: bottom;
+}
+
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

@@ -1,0 +1,31 @@
+.navlink-button{
+    padding: 0px;
+    margin: auto 10px;
+}
+
+.navbar-brand{
+    margin-right: 0px;
+}
+
+#navlink-request{
+    position: absolute;
+    right: 0px;
+}
+
+a{
+    line-height:16px;
+    color: #555555;
+}
+
+a:hover{
+    color:#aaaaaa;
+    text-decoration: none;
+}
+
+.navlink-selected{
+    color:#00bfff;
+}
+
+.btn-outline-primary{
+    border-color:#00bfff;
+}
